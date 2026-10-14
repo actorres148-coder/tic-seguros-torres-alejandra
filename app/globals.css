@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f6f9; color: #222; }
+
+.encabezado { background: #1f3a5f; color: white; padding: 16px 24px; }
+.encabezado h1 { margin: 0; font-size: 24px; }
+.encabezado p { margin: 4px 0 0; font-size: 14px; opacity: 0.85; }
+
+.menu { background: #2c5282; display: flex; flex-wrap: wrap; }
+.menu a { color: white; text-decoration: none; padding: 12px 20px; font-weight: bold; font-size: 14px; }
+.menu a:hover { background: #1f3a5f; }
+
+.contenido { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+
+.caja { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.caja h2 { margin-top: 0; color: #1f3a5f; }
+
+/* Formularios */
+.formulario { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.formulario label { display: flex; flex-direction: column; font-size: 14px; font-weight: bold; gap: 4px; }
+.formulario input, .formulario select, .formulario textarea { padding: 8px; border: 1px solid #bbb; border-radius: 4px; font-size: 14px; font-weight: normal; }
+.botones { grid-column: 1 / -1; display: flex; gap: 10px; }
+
+button, .boton { background: #2c5282; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; }
+button:hover, .boton:hover { background: #1f3a5f; }
+.boton-gris { background: #888; }
+.boton-rojo { background: #c53030; }
+.boton-chico { padding: 4px 10px; font-size: 13px; }
+
+/* Tablas */
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { background: #1f3a5f; color: white; text-align: left; padding: 8px; }
+td { padding: 8px; border-bottom: 1px solid #ddd; }
+tr:hover td { background: #f0f4fa; }
+.acciones { display: flex; gap: 6px; }
+.tabla-scroll { overflow-x: auto; }
+
+.buscador { display: flex; gap: 8px; margin-bottom: 12px; }
+.buscador input { flex: 1; padding: 8px; border: 1px solid #bbb; border-radius: 4px; }
+
+.mensaje { padding: 10px; border-radius: 4px; margin-bottom: 12px; background: #fde8e8; color: #9b2c2c; }
+
+/* Dashboard */
+.indicadores { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.indicador { background: white; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 4px solid #2c5282; }
+.indicador .numero { font-size: 40px; font-weight: bold; color: #1f3a5f; }
+.indicador .titulo { font-size: 14px; color: #555; }
+.graficos { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.barra-fila { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 14px; }
+.barra-nombre { width: 130px; }
+.barra-fondo { flex: 1; background: #e2e8f0; border-radius: 4px; height: 22px; }
+.barra { background: #2c5282; height: 22px; border-radius: 4px; }
+.barra-valor { width: 30px; text-align: right; font-weight: bold; }
